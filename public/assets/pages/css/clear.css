@@ -1,0 +1,28 @@
+/**
+ * This will use to clear the default browser style -
+ * before you start your own CSS
+ * ------------------------------------------------------------------------------
+ **/
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,p,table,th,td,form,input,textarea,select,label{ margin:0px; padding:0px; }
+h1,h2,h3,h4{ font-size:1em; font-weight:normal; }
+table{ border:0; }
+img{ margin: 0; padding: 0; border: 0; }
+ul li,ol li{ list-style: none;}
+
+/* html {
+	overflow-y: scroll;
+} */
+
+*{ margin:0px; padding:0px; }
+
+.clearfix:after { content:"."; display:block; height:0px; clear:both; visibility:hidden; }	
+/* FF, Safari, Opera—p */
+
+.clearfix { display:inline-block; }
+/* IE7, MacIE5—p */
+
+/* The Following Hidden From MacIE \*/
+* html .clearfix { height:1%; }
+.clearfix { display:block; height:inherit; }
+
+.clear { clear: both; height: 0; }

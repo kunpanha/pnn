@@ -1,0 +1,33 @@
+/*
+ *  Khmer Os Battambang
+ * ------------------------------------------------------------------------------
+ */
+@font-face {
+	font-family: "Khmer Os Battambang";
+	font-style: normal;
+	font-weight: 400;
+		src: local("Khmer Os Battambang"), 
+			url("fonts/Khmer-os-battambang/KhmerOSbattambang.eot"), /* IE9 Compat Modes */
+			url("fonts/Khmer-os-battambang/KhmerOSbattambang.eot?#iefix") format("embedded-opentype"),
+			url("fonts/Khmer-os-battambang/KhmerOSbattambang.woff2") format("woff2"), /* Super Modern Browsers */
+			url("fonts/Khmer-os-battambang/KhmerOSbattambang.woff") format("woff"), /* Pretty Modern Browsers */
+			url("fonts/Khmer-os-battambang/KhmerOSbattambang.ttf") format("truetype"), /* Safari, Android, iOS */
+			url("fonts/Khmer-os-battambang/KhmerOSbattambang.svg#svgFontName") format("svg"); /* Legacy iOS */
+		unicode-range: U+1780-17FF, U+200B-200C, U+25CC;				
+} 
+/*
+ *  BayonV8Khmer
+ * ------------------------------------------------------------------------------
+ */
+@font-face {
+	font-family: "BayonV8Khmer";
+	font-style: normal;
+	font-weight: 400;
+	src: local("BayonV8Khmer"), 
+		url(fonts/bayon-v8-khmer/bayon-v8-khmer-regular.eot) format('eot'),
+		url(fonts/bayon-v8-khmer/bayon-v8-khmer-regular.svg) format('svg'),
+		url(fonts/bayon-v8-khmer/bayon-v8-khmer-regular.ttf) format('ttf'),
+		url(fonts/bayon-v8-khmer/bayon-v8-khmer-regular.woff) format('woff'),
+		url(fonts/bayon-v8-khmer/bayon-v8-khmer-regular.woff2) format('woff2');
+	unicode-range: U+1780-17FF, U+200B-200C, U+25CC;	
+}

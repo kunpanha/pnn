@@ -1,0 +1,321 @@
+/**
+ * HOME CSS
+ * ------------------------------------------------------------------------------
+ **/
+.sub-gallery {
+	margin-left: -5px;
+	margin-right: -5px;
+}
+.sub-gallery [class*="col-"] {
+	padding-right: 5px;
+	padding-left: 5px;	
+}
+
+div .caption {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	background-repeat: repeat;	
+}
+div .caption .divBox1 {		
+	height: 80px;
+	text-align: center;
+	background: hsla(0, 66%, 39%, 0.8);
+	padding: 7px;
+	display: table;
+}
+div .caption .divBox2 {	
+	height: 80px;	
+	background: hsla(0, 8%, 12%, 0.8);		
+	display: table;
+}
+div .caption .divBox1 h4,
+div .caption .divBox2 h4 {		
+	color: #FFFFFF;
+	word-break: break-word;
+	word-wrap: break-word;	
+	display: block;
+	text-shadow: -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000, 1px 1px 0 #000000;
+}
+div .caption .divBox1 h4 {
+	font-size: 30px;
+	line-height: 30px;
+	font-weight: 700;
+	overflow: hidden;	
+	padding-top: 10px;
+}
+div .caption .divBox1 p  {
+	font-size: 14px;
+	color: #FFFFFF;
+	font-weight: 700;
+	text-shadow: -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000, 1px 1px 0 #000000;
+}
+div .caption .divBox1 h4.prpnn {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+	/* height: 66px; */	
+}
+div .caption .divBox1 h4.camingSoon {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+	/* height: 66px; */	
+	animation: blinker 1s linear infinite;
+}
+div .caption .divBox2 .caption-entry {
+	display: table-cell;
+    vertical-align: middle;
+}
+div .caption .divBox2 h4 {
+	font-size: 16px;
+	line-height: 30px;
+	font-weight: 700;
+	overflow: hidden;
+	max-height: 60px;
+}
+div .caption-relative {
+	display: block;
+	width: 100%;
+	position: relative;
+}
+div .underline h4:hover {
+	text-decoration: underline;
+	color: #FF0000;
+}
+div .sub-caption .divBox1,
+div .sub-caption .divBox2 {
+	height: auto;
+	padding-top: 7px;
+	padding-bottom: 7px;
+}
+div .sub-caption .divBox2 h4 {
+	font-size: 16px;
+	line-height: 28px;
+	max-height: 56px;
+	/* font-size: 16px;
+	line-height: 24px;
+	max-height: 48px; */
+}
+div .sub-caption .divBox2 p {
+	display: table-header-group;
+	font-size: 14px;
+	line-height: 24px;
+	font-weight: 300;
+	color: #E12127;
+	text-shadow: -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000, 1px 1px 0 #000000;
+}
+div .sub-caption .divBox2 p .time {
+	font-size: 14px;
+	line-height: 26px;
+}
+div .caption .bg-gradient {		
+	background: linear-gradient(0deg, #000000, rgba(255, 255, 255, 0));	
+}
+.padding-right-5 {
+	padding-right: 5px;
+}
+.margin-bt-15 {
+	margin-bottom: 15px;
+}
+.margin-top-10 {
+	margin-top: 10px;
+}
+.margin-bt-17 {
+	margin-bottom: 17px;
+}
+.margin-bt-5 {
+	margin-bottom: 5px;
+} 
+
+/*
+ *  Banner slide
+ * ------------------------------------------------------------------------------
+ */
+#bannerSlide .slide {
+	display: none;	
+	margin: 0 1px;
+} 
+#bannerSlide .slide:first-child {
+	display: block;
+} 
+#bannerSlide.slick-initialized .slide {
+	display: block;
+} 
+/*** pagination ***/
+#bannerSlide ul.slick-dots {
+	position: absolute;
+    z-index: 9;
+    bottom: 85px;
+    right: 0;
+	left: 0;
+	
+	width: 100%;
+	height: 15px;
+	line-height: 0;
+    margin: 0;
+	padding: 0 15px 0 0;	
+	display: table;	
+	text-align: right;
+}
+#bannerSlide ul.slick-dots li {
+	margin: 0 0 0 5px;
+	padding: 0;
+	display: inline-table;
+	position: relative;
+}
+#bannerSlide ul.slick-dots li:first-child {
+	margin: 0;
+}
+#bannerSlide ul.slick-dots li button {	
+	color: #1C1C1C;
+    font-size: 12px;
+    line-height: 24px;
+    font-weight: 500;
+    cursor: pointer;
+    background: #FFFFFF;
+    padding: 0 9px;
+	border: 0;
+	outline: none;
+}
+#bannerSlide ul.slick-dots li.slick-active button {
+	color: #FFFFFF;
+	background: #E12127;	
+}
+#bannerSlide ul.slick-dots li.slick-active button:focus {
+	border: 0;
+}
+
+/*
+ *  home page
+ * ------------------------------------------------------------------------------
+ */
+.section {	
+	width: 100%;	
+	border-bottom: 3px solid #FF3700;	
+	position: relative;
+	margin-bottom: 15px;
+}
+.section a:after {
+	content: "";
+	border-left: 40px solid rgb(243, 115, 53);		
+	border-top: 40px solid transparent;
+	position: absolute;
+	top: 0;
+	right: -40px;	
+}
+.section a.section-title {
+	display: table;
+	background: linear-gradient(to right, rgb(253, 200, 48), rgb(243, 115, 53));
+	position: relative;
+	height: 40px;
+}
+/*.section a.section-title.blue {
+	background: linear-gradient(to right, rgb(0, 0, 144), rgb(243, 115, 53));
+}
+.section a.section-title.green {
+	background: linear-gradient(to right, rgb(39, 151, 23), rgb(243, 115, 53));
+}
+.section a.section-title.red {
+	background: linear-gradient(to right, rgb(255, 55, 0), rgb(243, 115, 53));
+}*/
+.section a.section-title h2 {
+	font-family: BayonV8Khmer,Arial,Helvetica,sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 500;
+    word-break: break-word;
+    word-wrap: break-word;
+    text-transform: uppercase;
+	text-align: left;
+	color: #FFFFFF;
+	padding: 5px 15px;	
+}
+	
+/*
+ *  keyframes
+ * ------------------------------------------------------------------------------
+ */		
+@keyframes blinker {  
+  50% { opacity: 0; }
+}	
+
+/*
+ *  Global CSS
+ * ------------------------------------------------------------------------------
+ */	
+h3.main-title a {
+	color: #1c1c1c;
+}
+h3.main-title a:hover {	
+	transition: color 0.3s linear;
+}
+h3.main-title a:hover.col-yellow {
+	color: hsla(49, 63%, 34%, 0.8);
+}
+h3.main-title a:hover.col-red {
+	color: hsla(0, 66%, 39%, 0.8);
+}
+
+/*
+ *  Responsive
+ * ------------------------------------------------------------------------------
+ */	
+/*** Medium devices Desktops ***/ 
+@media only screen and (max-width : 992px) {
+	#frm-tablet {
+		margin-bottom: 20px;
+	}
+}
+/*** Small devices Tablets ***/
+@media only screen and (max-width : 768px) {	
+	div .caption .divBox1 h4 {
+		font-size: 24px;
+	}
+	div .caption .divBox1 p {
+		font-size: 12px;
+	}
+	div .caption .divBox2 h4 {
+		font-size: 18px;
+		line-height: 30px;
+		max-height: 60px;
+	}
+}
+/*** Extra small devices ***/
+@media only screen and (max-width : 480px) {	
+	div .caption .divBox1 h4 {
+		font-size: 18px;
+		line-height: 24px;
+		padding-top: 7px;
+	}
+	div .caption .divBox1 p {
+		font-size: 11px;
+	}
+	div .caption .divBox2 h4 {
+		font-size: 16px;
+		line-height: 24px;
+		max-height: 48px;
+	}
+	div .caption .divBox1,
+	div .caption .divBox2	{
+		height: 66px;
+	}
+	div .sub-caption .divBox1, div .sub-caption .divBox2 {
+		height: auto;
+	}
+	
+	/*** banner slide ***/	
+	#bannerSlide ul.slick-dots {
+		bottom: 70px;
+	}
+	#divBanner .row-full {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	#bannerSlide ul.slick-dots li button {
+		font-size: 12px;
+		line-height: 18px;
+		padding: 0 6px;
+	}
+}

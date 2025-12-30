@@ -1,0 +1,169 @@
+/*
+ *  page
+ * ------------------------------------------------------------------------------
+ */
+#sect-top {
+	width: 100%;
+	height: 40px;
+	background: #FF3700;
+	margin-top: 30px;
+	margin-bottom: 15px;
+	position: relative;
+}
+#sect-top .section-title {
+	background: linear-gradient(to right, rgb(253, 200, 48), rgb(243, 115, 53));
+	display: table;
+}
+#sect-top .section-title a {
+	display: table;
+}
+#sect-top .section-title a h2 {
+	font-family: BayonV8Khmer,Arial,Helvetica,sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 500;
+    word-break: break-word;
+    word-wrap: break-word;
+    text-transform: uppercase;
+	text-align: left;
+	color: #FFFFFF;
+	padding: 5px 15px;
+}
+.section {	
+	width: 100%;	
+	border-bottom: 3px solid #FF3700;	
+	position: relative;
+	margin-bottom: 15px;
+}
+.section a:after {
+	content: "";
+	border-left: 40px solid rgb(243, 115, 53);		
+	border-top: 40px solid transparent;
+	position: absolute;
+	top: 0;
+	right: -40px;	
+}
+.section a.section-title {
+	display: table;
+	background: linear-gradient(to right, rgb(0, 0, 144), rgb(243, 115, 53));
+	position: relative;
+	height: 40px;
+}
+.section a.section-title h2 {
+	font-family: BayonV8Khmer,Arial,Helvetica,sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 500;
+    word-break: break-word;
+    word-wrap: break-word;
+    text-transform: uppercase;
+	text-align: left;
+	color: #FFFFFF;
+	padding: 5px 15px;	
+}
+
+h4.title {
+	 padding: 10px;
+	 background: #F37335;
+	 height: 68px;
+	 text-align: center;
+}
+h6.title {
+	padding: 10px;
+	background: #F37335;
+	height: 60px;
+	text-align: center;
+}
+
+.image-wrapper.imgwrap-kore {
+	padding-bottom: 100%;
+}
+
+/*
+ *  Pagination
+ * ------------------------------------------------------------------------------
+ */
+.relative {
+ 	background-color: #FF3700 !important;
+	border: none;
+	color: #FFFF;
+	padding: 5px 20px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 14px;
+}
+.pagination {
+ 	margin: 10px 0 !important;
+}
+
+/*
+ *  keyframes
+ * ------------------------------------------------------------------------------
+ */		
+@keyframes blinker {  
+  50% { opacity: 0; }
+}
+
+/* Landscape tablets and medium desktops */
+@media only screen and (max-width: 1280px) {
+
+}
+
+/* Landscape tablets and medium desktops */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+/* Portrait tablets and small desktops */
+@media only screen and (max-width: 991px) {
+	/*** section title ***/
+	#sect-top, .section { margin-bottom: 0;}
+}
+
+/* Landscape phones and portrait tablets */
+@media only screen and (max-width: 767px) {
+	/*** scroll text ***/
+	#sect-top {
+		height: 30px;
+		margin-bottom: 10px;
+	}
+	#sect-top .section-title a h2 {
+		font-size: 16px;
+		line-height: 30px;
+		padding: 0 15px;
+	}
+	/*** section title ***/		
+	.section a:after {
+		content: "";
+		border-left: 30px solid rgb(243, 115, 53);		
+		border-top: 30px solid transparent;
+		position: absolute;
+		top: 0;
+		right: -30px;
+		height: 30px;
+		width: 30px;
+	}
+	.section a.section-title {
+		height: 30px;
+	}
+	.section a.section-title h2 {		
+		font-size: 16px;
+		line-height: 30px;		
+		padding: 0 15px;	
+	}
+	h4.title {
+		font-size: 14px;
+		line-height: 24px;
+		padding: 10px;
+		background: #F37335;
+		height: 59px;
+		text-align: center;
+	}
+	
+}
+
+/* Portrait phones and smaller */
+@media only screen and (max-width: 480px) {			
+
+} 

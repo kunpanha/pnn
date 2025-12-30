@@ -1,0 +1,258 @@
+/**
+ * Global CSS
+ * ------------------------------------------------------------------------------
+ **/
+body {
+	font-family: Khmer Os Battambang,Arial,Helvetica,sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 24px;
+	color: #2D2D2D;
+	background-color: #e5e5e5;
+	overflow-x: hidden;
+}
+a, a:hover, a:visited, a:link, a:active, a:focus {
+    text-decoration: none;
+	outline: 0;
+}
+h1,h2,h3,h4,h5,h6 {
+	padding: 0;
+	margin: 0;
+	font-weight: 300;
+}
+textarea:focus, input:focus {
+    outline: none;
+}
+
+#page-wrapper h1 {
+	font-size: 36px;
+	font-weight: 500;
+}
+.page-header {
+	padding-bottom: 5px !important;
+}
+.clear-padtop {
+	padding-top: 0 !important;
+}
+/*** color ***/
+.color-purple {
+	color: #673090 !important;
+}
+.color-red {
+	color: #C60000;
+}
+.color-black {
+	color: #222222;
+}
+.color-yellow {
+	color: #E8C245;
+}
+
+/*** margin ***/
+.margin-center {
+	margin: 0 auto;
+}
+.pos-relative {
+	position: relative;
+}
+
+/**
+ * navbar
+ * ------------------------------------------------------------------------------
+ **/
+.navbar-right {
+	margin-right: 0;
+}
+.top-navbar .navbar-brand {
+	width: auto !important;
+}
+.top-navbar .navbar-brand small {
+	font-size: 16px;
+	font-weight: 300;
+}
+
+/**
+ * Sidebar
+ * ------------------------------------------------------------------------------
+ **/
+.btn-sidebar {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	z-index: 99;
+	
+	font-size: 12px;
+	line-height: 24px;
+	font-weight: 300;
+	padding: 3px 6px;
+}
+
+/**
+ * Modal Full screen
+ * ------------------------------------------------------------------------------
+ **/
+.modal.modal-fullscreen .modal-dialog,
+.modal.modal-fullscreen .modal-content {
+	bottom: 0;
+	left: 0;
+	position: ralative;
+	right: 0;
+	top: 0;
+}
+.modal.modal-fullscreen .modal-dialog {
+	margin: 0;
+	width: 100%;
+	animation-duration:0.6s;
+}
+.modal.modal-fullscreen .modal-content {
+	border: none;
+	-moz-border-radius: 0;
+	border-radius: 0;
+	-webkit-box-shadow: inherit;
+	-moz-box-shadow: inherit;
+	-o-box-shadow: inherit;
+	box-shadow: inherit;
+	/* change bg color below */
+	/* background:#1abc9c; */
+}
+.modal.modal-fullscreen.force-fullscreen {
+	/* Remove the padding inside the body */
+}
+.modal.modal-fullscreen.force-fullscreen .modal-body {
+	padding: 0;
+}
+.modal.modal-fullscreen.force-fullscreen .modal-header,
+.modal.modal-fullscreen.force-fullscreen .modal-footer {
+	left: 0;
+	position: ralative;
+	right: 0;
+}
+.modal.modal-fullscreen.force-fullscreen .modal-header {
+	top: 0;
+}
+.modal.modal-fullscreen.force-fullscreen .modal-footer {
+	bottom: 0;
+}
+.modal.modal-fullscreen .close {
+	font-size: 24px;
+}
+ 
+
+/**
+ * Form Laod
+ * ------------------------------------------------------------------------------
+ **/
+.table-bordered>thead>tr>td, .table-bordered>thead>tr>th {
+	border-bottom-width: 1px;
+}
+.table-responsive {
+	overflow-x: hidden;
+}
+.divLoading {
+	width: 72px;
+	height: 72px;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;	
+} 
+
+/**
+ * pagination
+ * ------------------------------------------------------------------------------
+ **/
+.totalRecords {
+	margin: 20px 0;
+} 
+.totalRecords span {
+	font-size: 14px;
+	line-height: 24px;
+}
+.totalRecords font {
+    color: #b44331;
+}
+.pagination {
+	float: right;
+}
+.pagination a, .pagination span {
+	font-size: 14px;
+	line-height: 24px;	
+	color: #2a6496;
+	background-color: #FFFFFF;
+	position: relative;	
+	text-decoration: none;	
+	border: 1px solid #ddd;
+	float: left;
+	padding: 6px 12px;	
+	margin-left: -1px;
+}
+.pagination a:last-child {
+	border-top-right-radius: 4px;
+	border-bottom-right-radius: 4px;
+}
+.pagination a:first-child {
+	border-top-left-radius: 4px;
+	border-bottom-left-radius: 4px;
+}
+.pagination a:hover {
+	color: #2a6496;
+	background-color: #eee;
+	border-color: #ddd;
+}
+.pagination span.current {
+	color: #fff;
+	cursor: default;
+	background-color: #428bca;
+	border-color: #428bca;
+}
+.warning-label {
+	color: #a94442;
+}
+
+/*
+ *  search suggest
+ * ------------------------------------------------------------------------------
+ */
+#searchResult {
+	position: absolute;
+	top: 28px;
+	right: 15px;
+	z-index: 9;
+	display: none;
+	border-top: 0px;
+	overflow: hidden;
+	overflow-y: auto;
+	border: 1px #CCCCCC solid;
+	background-color: #FFFFFF;
+	max-height: 350px;	
+}
+#searchResult .show {	
+	font-size: 12px; 	
+	padding: 10px 10px;
+    border-bottom: 1px dotted #CCCCCC;
+}
+#searchResult .show:hover {
+	background: #222222;
+	color: #FFFFFF;
+	cursor: pointer;
+}
+#searchResult div:last-child {
+	border-bottom: 0;
+}
+
+/*
+ *  alert custom
+ * ------------------------------------------------------------------------------
+ */
+.alert-custom {
+	width: 20%;
+	position: fixed;
+	z-index: 99;
+	top: 80px;
+	right: 40px;
+} 
+.alert-custom .glyphicon {
+	padding-left: 10px;
+}
